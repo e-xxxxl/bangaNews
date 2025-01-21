@@ -1,0 +1,75 @@
+.sectionTitle {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.mainArticle {
+    width: 50%;
+}
+
+.mainArticleImg {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.mainArticleTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.mainArticleDescription {
+    font-size: 14px;
+    color: #666;
+}
+
+.articleList {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.smallArticle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.smallArticleImg {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.smallArticleHeadline {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.advertisement {
+    width: 20%;
+    height: auto;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #999;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .mainArticle, .articleList, .advertisement {
+        width: 100%;
+    }
+}
