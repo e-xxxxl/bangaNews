@@ -13,7 +13,7 @@ const CrazyLoader = () => {
   return (
     <div style={loaderStyles.container}>
       <div style={loaderStyles.spinner}></div>
-      <p style={loaderStyles.text}>Loading the crazy stuff...</p>
+      <p style={loaderStyles.text}>BANGA NEWS</p>
     </div>
   );
 };
