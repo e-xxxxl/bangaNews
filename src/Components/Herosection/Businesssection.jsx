@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './BusinessSection.module.css'; // Import the CSS Module
+import styles from './BusinessSection.module.css'; 
 import mainImage from '../../assets/tinubu.jpg'; // Replace with actual image path
 import sampleBusinessImage from '../../assets/tinubu.jpg'; // Replace with actual image path
 
