@@ -1,0 +1,73 @@
+.notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: #f9f9f9;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .notFoundTitle {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .notFoundMessage {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  .notFoundLink {
+    font-size: 1.2rem;
+    color: #0077cc;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s ease, transform 0.3s ease;
+    animation: bounce 2s infinite;
+  }
+  
+  .notFoundLink:hover {
+    border-bottom: 1px solid #0077cc;
+    transform: scale(1.1);
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Adding subtle background animation */
+  
+  .notFoundContainer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 119, 204, 0.1), transparent);
+    animation: rotateBackground 20s linear infinite;
+  }
+  
+  @keyframes rotateBackground {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

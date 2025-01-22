@@ -18,9 +18,6 @@ const Navbar = () => {
                 <a className="nav-link" href="#home">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#world">World</a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link" href="#politics">Politics</a>
               </li>
               <li className="nav-item">
@@ -38,11 +35,18 @@ const Navbar = () => {
               <li className="nav-item">
                 <a className="nav-link" href="#health">Health</a>
               </li>
+              
             </ul>
             <form className="d-flex mx-auto">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button className="btn btn-outline-primary" type="submit">Search</button>
             </form>
+
+            <ul className="navbar-nav"> 
+            <li className="nav-item ">
+                <a className="nav-link" href="#health">Admin</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
