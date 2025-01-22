@@ -51,7 +51,7 @@ const Footer = () => {
             <p>
               Phone:{' '}
               <a href="tel:+1234567890" className="text-warning text-decoration-underline">
-                +123 456 789    
+                +123 456 78   
               </a>
             </p>
             <div className="d-flex align-items-center">
