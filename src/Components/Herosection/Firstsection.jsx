@@ -272,6 +272,8 @@ import color from '../../assets/color.png';
 import outlook from '../../assets/outlook.png';
 import tinubu from '../../assets/tinubu.jpg';
 import eagles from '../../assets/eagless.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const Firstsection = () => {
     const captions = [
@@ -331,7 +333,7 @@ const Firstsection = () => {
         <div className="d-flex">
             {/* Carousel Section */}
             <div className="carousel-container flex-shrink-0">
-                <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                     <div className="carousel-inner">
                         {captions.map((caption, index) => (
                             <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
