@@ -10,7 +10,7 @@ const Footer = () => {
             <h5 className="text-uppercase text-warning pb-2">About Us</h5>
             <p className="text-muted">
               Your trusted source for the latest news in politics, business, technology, sports,
-              entertainment, and health. Stay informed with in-depth articles and updates.
+              entertainment, and health.Stay informed with in-depth articles and updates.
             </p>
           </div>
 
