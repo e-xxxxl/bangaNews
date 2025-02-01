@@ -8,6 +8,7 @@ import LandingPage from './Components/Pages/LandingPage'
 import AdminSignin from './Components/Admin/AdminAuth/AdminSignin'
 import AdLayout from './Components/Admin/AdLayout/AdLayout'
 import AdLandingPage from './Components/Admin/AdminPages/AdLandingPage'
+import NewPost from './Components/Admin/NewPost/NewPost'
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
         <Route path='/admin' element={<AdLayout/>}>
           <Route path='/admin/signin' element={<AdminSignin/>} />
           <Route path='/admin/dashboard' element={<AdLandingPage/>} />
+          <Route path='/admin/create-post' element={<NewPost/>} />
        </Route>
 
       </Routes>

@@ -1,0 +1,69 @@
+/* Container Animation */
+.new-post-container {
+    animation: fadeIn 0.8s ease-in-out;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  /* Underline Effect */
+  .underline {
+    width: 150px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 0 auto 20px auto;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  /* Form Animation */
+  .form-animate {
+    animation: slideUp 0.8s ease-in-out;
+  }
+  
+  /* Button Hover Effect */
+  .submit-btn {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      width: 0;
+    }
+    to {
+      width: 150px;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

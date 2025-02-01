@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaNewspaper, FaUsers, FaImages, FaPlusCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const AdDash = () => {
   return (
@@ -12,8 +13,8 @@ const AdDash = () => {
 
       {/* Post Creation Section */}
       <div className="mt-4 text-center">
-        <button className="btn btn-success d-flex align-items-center gap-2 mx-auto">
-          <FaPlusCircle /> Create New Post
+        <button className="btn btn-success d-flex align-items-center gap-2 mx-auto text-decoration-none">
+          <FaPlusCircle /> <Link to="/admin/create-post">Create New Post</Link>
         </button>
       </div>
 

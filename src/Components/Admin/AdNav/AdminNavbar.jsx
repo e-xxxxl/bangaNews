@@ -1,5 +1,6 @@
 import React from 'react'
 import bangalogo from '../../../assets/badmin.png'
+import { Link } from 'react-router-dom'
 const AdminNavbar = () => {
   return (
     <>
@@ -18,7 +19,11 @@ const AdminNavbar = () => {
                 <a className="nav-link">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" >NEW POST</a>
+                <a className="nav-link" >
+                  
+                {/* <Link to="/admin/create-post">NEW POST</Link>
+                 */}
+                </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link">Business</a>
