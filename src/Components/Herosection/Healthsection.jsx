@@ -43,7 +43,7 @@ const HealthSection = () => {
                             The Path to Wellness: Embracing a Balanced Life
                         </h3>
                         <p className={styles.mainArticleDescription}>
-                            Learn how to achieve a healthier lifestyle by focusing on nutrition, mental health, and physical activity.
+                            Learn how to achieve a healthier lifestyle by focusing on nutrition, mental health, and physical activities.
                         </p>
                     </div>
                 </div>
