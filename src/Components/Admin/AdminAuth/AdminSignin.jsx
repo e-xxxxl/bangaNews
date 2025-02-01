@@ -100,6 +100,7 @@
 
 import React, { useState } from "react";
 import bangalogo from '../../../assets/bangalogo.png'
+import { useNavigate } from "react-router-dom";
 
 const allowedUsers = [
   { email: "user1@example.com", password: "password123" },
@@ -107,6 +108,8 @@ const allowedUsers = [
 ];
 
 const AdminSignin = () => {
+  const navigate = useNavigate();   
+
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
 
@@ -121,6 +124,7 @@ const AdminSignin = () => {
       (user) => user.email === formData.email && user.password === formData.password
     );
     if (userExists) {
+      navigate("/admin/dashboard")
       console.log("Login successful", [formData]);
       setError("");
     } else {
@@ -134,11 +138,11 @@ const AdminSignin = () => {
         <img
           src={bangalogo}
           alt="Bootstrap Logo"
-          width="72"
-          height="72"
+         
+          height="52"
           className="mb-4"
         />
-        <h2 className="mb-3">Please sign in</h2>
+        <h3 className="mb-3">Please sign in</h3>
         {error && <div className="alert alert-danger">{error}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-floating mb-2">

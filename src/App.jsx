@@ -7,6 +7,7 @@ import NotFound from './Components/NotFound/NotFound'
 import LandingPage from './Components/Pages/LandingPage'
 import AdminSignin from './Components/Admin/AdminAuth/AdminSignin'
 import AdLayout from './Components/Admin/AdLayout/AdLayout'
+import AdLandingPage from './Components/Admin/AdminPages/AdLandingPage'
 
 function App() {
   
@@ -21,10 +22,9 @@ function App() {
         {/* ADMIN ROUTES */}
 
         <Route path='/admin' element={<AdLayout/>}>
-          
           <Route path='/admin/signin' element={<AdminSignin/>} />
-         
-      </Route>
+          <Route path='/admin/dashboard' element={<AdLandingPage/>} />
+       </Route>
 
       </Routes>
     </>
