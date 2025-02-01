@@ -45,7 +45,7 @@ const Footer = () => {
                 href="mailto:contact@newswebsite.com"
                 className="text-warning text-decoration-underline"
               >
-                contact@newswebsite.com
+                banga@newswebsite.com
               </a>
             </p>
             <p>
