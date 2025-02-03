@@ -104,7 +104,7 @@ import { useNavigate } from "react-router-dom";
 
 const allowedUsers = [
   { email: "user1@example.com", password: "password123" },
-  { email: "user2@example.com", password: "securepass" }
+  { email: "user2@example.com", password: "securepassword" }
 ];
 
 const AdminSignin = () => {
