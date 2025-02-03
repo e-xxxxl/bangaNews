@@ -57,14 +57,11 @@ const LandingPage = () => {
         )
       );
     };
-    
-
-
   return (
     <>
 
 
-<Navbar />
+          <Navbar />
           <Firstsection />
           <Politicalsection />
           <TechSection />
