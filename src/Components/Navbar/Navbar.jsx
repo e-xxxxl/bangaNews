@@ -16,10 +16,10 @@ const Navbar = () => {
           <div className="d-flex w-100 justify-content-between align-items-center">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link">Home</a>
+              <Link className="nav-link" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" >Politics</a>
+              <Link className="nav-link" to="/politics">Politics</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link">Business</a>
@@ -44,12 +44,8 @@ const Navbar = () => {
             </form>
 
             <ul className="navbar-nav"> 
-            <li className="nav-item ">
-                <a className="nav-link">
-                  
-                  <Link to="/admin/signin">Admin</Link>
-
-                </a>
+            <li className="nav-item "> 
+                  <Link className="nav-link" to="/admin/signin">Admin</Link>
               </li>
             </ul>
           </div>

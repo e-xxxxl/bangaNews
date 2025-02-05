@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './PoliticalSection.module.css'; // Import the CSS Module
 import trumpImage from '../../assets/trumppp.jpg'; // Replace with actual image path
 import sampleImage from '../../assets/vdmm.jpeg'; // Replace with actual image path
+import { Link } from 'react-router-dom';
 
 const PoliticalSection = () => {
     const articles = [
@@ -37,7 +38,10 @@ const PoliticalSection = () => {
             <div className={`d-flex ${styles.flexContainer} gap-3`}>
                 {/* Main Article Block */}
                 <div className={styles.mainArticle}>
-                    <img src={trumpImage} alt="Trump News" className={styles.mainArticleImg} />
+                <Link className="" to="/politics">
+                <img src={trumpImage} alt="Trump News" className={styles.mainArticleImg} />
+                </Link>
+                   
                     <h3 className={styles.mainArticleTitle}>
                         Fears over deportation, border closure as Trump returns to White House
                     </h3>
