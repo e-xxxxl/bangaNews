@@ -64,8 +64,8 @@ const LandingPage = () => {
           <Navbar />
           <Firstsection />
           <Politicalsection />
-          <TechSection />
           <Businesssection />
+          <TechSection />
           <Sportsection />
           <EntertainmentSection />
           <HealthSection />
