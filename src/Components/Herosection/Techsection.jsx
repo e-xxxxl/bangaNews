@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './TechSection.module.css'; // Import the CSS Module
 import aiImage from '../../assets/trumppp.jpg'; // Replace with actual image path
 import sampleTechImage from '../../assets/trumppp.jpg'; // Replace with actual image path
+import { Link } from 'react-router-dom';
 
 const TechSection = () => {
     const articles = [
@@ -37,7 +38,9 @@ const TechSection = () => {
             <div className={`d-flex ${styles.flexContainer} gap-3`}>
                 {/* Main Article Block */}
                 <div className={styles.mainArticle}>
+                    <Link to='/technology'>
                     <img src={aiImage} alt="AI News" className={styles.mainArticleImg} />
+                    </Link>
                     <div className={styles.mainArticleContent}>
                         <h3 className={styles.mainArticleTitle}>
                             The future of AI: What to expect in the next decade

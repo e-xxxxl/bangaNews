@@ -1,22 +1,18 @@
 .sectionTitle {
-    font-size: 28px;
+   font-size: 44px;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
-    border-bottom: 3px solid #28a745;
+    border-bottom: 3px solid #0047AB;
     padding-bottom: 10px;
+    text-align: center;
 }
-
-.flexContainer {
-    display: flex;
-    gap: 20px;
-}
-
 .mainArticle {
-    width: 60%;
+    width: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
+    margin-top: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -30,13 +26,13 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
-    border-bottom: 4px solid #28a745;
+    border-bottom: 4px solid #0047AB;
 }
 
 .mainArticleContent {
     padding: 20px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -49,54 +45,13 @@
 }
 
 .mainArticleDescription {
-    font-size: 16px;
+    font-size: 20px;
     color: #666;
 }
-
-.articleList {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.smallArticle {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    padding: 10px;
-    border-radius: 8px;
-    background: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-.smallArticle:hover {
-    background: #e6ffe6;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-}
-
-.smallArticleImg {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.smallArticleHeadline {
-    font-size: 14px;
-    color: #333;
-    font-weight: bold;
-}
-
 @media (max-width: 768px) {
-    .flexContainer {
-        flex-direction: column;
-    }
-    .mainArticle, .articleList {
+    .mainArticle {
         width: 100%;
     }
-    
     .mainArticleContent {
         position: relative;
         padding: 15px;
@@ -105,6 +60,6 @@
         width: 100%;
         height: 200px;
         object-fit: cover;
-        border-bottom: 4px solid #28a745;
+        border-bottom: 4px solid #0047AB;
     }
 }

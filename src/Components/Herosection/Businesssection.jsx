@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './BusinessSection.module.css'; 
 import mainImage from '../../assets/tinubu.jpg'; 
 import sampleBusinessImage from '../../assets/tinubu.jpg'; 
+import { Link } from 'react-router-dom';
 const Businesssection = () => {
     const articles = [
         {
@@ -36,7 +37,9 @@ const Businesssection = () => {
             <div className={`d-flex ${styles.flexContainer} gap-3`}>
                 {/* Main Article Block */}
                 <div className={styles.mainArticle}>
-                    <img src={mainImage} alt="Business Insights" className={styles.mainArticleImg} />
+                   <Link className="" to="/business">
+                   <img src={mainImage} alt="Business Insights" className={styles.mainArticleImg} />
+                   </Link>
                     <div className={styles.mainArticleContent}>
                         <h3 className={styles.mainArticleTitle}>
                             Adapting to Change: The Future of Global Business

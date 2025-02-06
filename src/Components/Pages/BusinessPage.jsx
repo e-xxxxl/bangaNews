@@ -1,6 +1,7 @@
 import React from 'react'
-import BusinessLonepage from '../BusinessPage/BusinessLonepage'
+import BusinessLonepage from '../LonePages/BusinessLonepage/BusinessLonepage'
 import Navbar from '../Navbar/Navbar'
+import Footer from '../Footer/Footer'
 
 const BusinessPage = () => {
   return (
@@ -8,6 +9,7 @@ const BusinessPage = () => {
     
     <Navbar/>
     <BusinessLonepage/>
+    <Footer/>
     </>
   )
 }

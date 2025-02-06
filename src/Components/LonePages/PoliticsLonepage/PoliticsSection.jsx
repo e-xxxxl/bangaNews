@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './PoliticsSection.module.css'; // Import the CSS Module
-import trumpImage from '../../assets/trumppp.jpg'; // Replace with actual image path
+import trumpImage from '../../../assets/trumppp.jpg'; // Replace with actual image path
 
 const PoliticsSection = () => {
   return (

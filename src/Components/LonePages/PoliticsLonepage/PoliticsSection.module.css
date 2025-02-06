@@ -22,3 +22,9 @@
     font-weight: bold;
     margin: 10px 0;
 }
+
+@media (max-width: 768px) {
+    .mainArticle    {
+        width: 100%;
+    }
+}

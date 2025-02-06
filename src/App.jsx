@@ -11,6 +11,8 @@ import AdLandingPage from './Components/Admin/AdminPages/AdLandingPage'
 import NewPost from './Components/Admin/NewPost/NewPost'
 import PoliticsPage from './Components/Pages/PoliticsPage'
 import BusinessPage from './Components/Pages/BusinessPage'
+import TechnologyPage from './Components/Pages/TechnologyPage'
+import SportsPage from './Components/Pages/SportsPage'
 
 function App() {
   
@@ -22,6 +24,8 @@ function App() {
         <Route path="/" element={<LandingPage/>}/>
         <Route path="/politics" element={<PoliticsPage/>}/>
         <Route path="/business" element={<BusinessPage/>}/>
+        <Route path="/technology" element={<TechnologyPage/>}/>
+        <Route path="/sports" element={<SportsPage/>}/>
         <Route path="*" element={<NotFound/>}/>
 
         {/* ADMIN ROUTES */}

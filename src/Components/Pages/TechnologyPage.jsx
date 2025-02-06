@@ -1,17 +1,16 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
-import PoliticsSection from '../LonePages/PoliticsLonepage/PoliticsSection'
+import TechLonepage from '../LonePages/TechLonepage/TechLonepage'
 import Footer from '../Footer/Footer'
 
-const PoliticsPage = () => {
+const TechnologyPage = () => {
   return (
     <>
     <Navbar/>
-    <PoliticsSection/>
+    <TechLonepage/>
     <Footer/>
-    
     </>
   )
 }
 
-export default PoliticsPage
+export default TechnologyPage
