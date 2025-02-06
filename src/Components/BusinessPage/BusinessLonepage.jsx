@@ -4,10 +4,8 @@ import mainImage from '../../assets/tinubu.jpg';
 const BusinessSection = () => {
   return (
     <>
-
       <div>
-        
-          {/* Main Article Blok */}
+          {/* Main Article Block */}
           <div className={styles.mainArticle}>
             <img src={mainImage} alt="Business Insights" className={styles.mainArticleImg} />
             <div className={styles.mainArticleContent}>
@@ -19,9 +17,7 @@ const BusinessSection = () => {
               </p>
           </div>
         </div>
-
       </div>
-
     </>
   )
 }
