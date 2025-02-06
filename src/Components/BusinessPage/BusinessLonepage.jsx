@@ -7,7 +7,7 @@ const BusinessSection = () => {
 
       <div>
         
-          {/* Main Article Block */}
+          {/* Main Article Blok */}
           <div className={styles.mainArticle}>
             <img src={mainImage} alt="Business Insights" className={styles.mainArticleImg} />
             <div className={styles.mainArticleContent}>
