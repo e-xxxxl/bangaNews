@@ -1,11 +1,13 @@
 import React from 'react'
 import styles from './BusinessLonepage.module.css'; 
 import mainImage from '../../assets/tinubu.jpg'; 
-const BusinessSection = () => {
+
+const BusinessLonepage = () => {
   return (
     <>
-      <div>
+      <div className="container py-5">
           {/* Main Article Block */}
+           <h2 className={styles.sectionTitle}>Business</h2>
           <div className={styles.mainArticle}>
             <img src={mainImage} alt="Business Insights" className={styles.mainArticleImg} />
             <div className={styles.mainArticleContent}>
@@ -22,4 +24,4 @@ const BusinessSection = () => {
   )
 }
 
-export default BusinessSection
+export default BusinessLonepage

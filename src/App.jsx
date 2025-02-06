@@ -10,6 +10,7 @@ import AdLayout from './Components/Admin/AdLayout/AdLayout'
 import AdLandingPage from './Components/Admin/AdminPages/AdLandingPage'
 import NewPost from './Components/Admin/NewPost/NewPost'
 import PoliticsPage from './Components/Pages/PoliticsPage'
+import BusinessPage from './Components/Pages/BusinessPage'
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage/>}/>
         <Route path="/politics" element={<PoliticsPage/>}/>
+        <Route path="/business" element={<BusinessPage/>}/>
         <Route path="*" element={<NotFound/>}/>
 
         {/* ADMIN ROUTES */}
