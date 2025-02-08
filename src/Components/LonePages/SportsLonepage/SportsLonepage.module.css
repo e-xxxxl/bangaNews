@@ -23,7 +23,7 @@
 .mainArticleImg {
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
     border-bottom: 4px solid #28a745;
 }
 
@@ -57,7 +57,7 @@
     .mainArticleImg {
         width: 100%;
         height: 200px;
-        object-fit: cover;
+        object-fit: contain;
         border-bottom: 4px solid #28a745;
     }
 }

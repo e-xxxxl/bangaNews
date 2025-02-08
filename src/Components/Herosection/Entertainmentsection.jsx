@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './EntertainmentSection.module.css'; // Import the CSS Module
 import mainImage from '../../assets/burna.jpg'; // Replace with actual image path
 import sampleEntertainmentImage from '../../assets/burna.jpg'; // Replace with actual image path
+import { Link } from 'react-router-dom';
 
 const Entertainmentsection = () => {
     const articles = [
@@ -37,7 +38,9 @@ const Entertainmentsection = () => {
             <div className={`d-flex ${styles.flexContainer}`}>
                 {/* Main Article Block */}
                 <div className={styles.mainArticle}>
+                    <Link to="/entertainment">
                     <img src={mainImage} alt="Entertainment Highlights" className={styles.mainArticleImg} />
+                    </Link>
                     <div className={styles.mainArticleContent}>
                         <h3 className={styles.mainArticleTitle}>
                             The Evolution of Entertainment: A New Era of Creativity

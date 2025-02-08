@@ -13,6 +13,7 @@ import PoliticsPage from './Components/Pages/PoliticsPage'
 import BusinessPage from './Components/Pages/BusinessPage'
 import TechnologyPage from './Components/Pages/TechnologyPage'
 import SportsPage from './Components/Pages/SportsPage'
+import EntertainmentPage from './Components/Pages/EntertainmentPage'
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
         <Route path="/business" element={<BusinessPage/>}/>
         <Route path="/technology" element={<TechnologyPage/>}/>
         <Route path="/sports" element={<SportsPage/>}/>
+        <Route path="/entertainment" element={<EntertainmentPage/>}/>
         <Route path="*" element={<NotFound/>}/>
 
         {/* ADMIN ROUTES */}
