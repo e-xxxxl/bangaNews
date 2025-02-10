@@ -47,7 +47,7 @@
 }
 
 @media (max-width: 768px) {
-    .mainArticle, .articleList {
+    .mainArticle{
         width: 100%;
     }
     .mainArticleContent {
