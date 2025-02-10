@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './HealthSection.module.css'; // Import the CSS Module
 import mainImage from '../../assets/health.jpg'; // Replace with actual image path
 import sampleHealthImage from '../../assets/health.jpg'; // Replace with actual image path
+import { Link } from 'react-router-dom';
 
 const HealthSection = () => {
     const articles = [
@@ -37,7 +38,7 @@ const HealthSection = () => {
             <div className={`d-flex ${styles.flexContainer}`}>
                 {/* Main Article Block */}
                 <div className={styles.mainArticle}>
-                  <Link>
+                  <Link to="/health">
                   <img src={mainImage} alt="Health Insights" className={styles.mainArticleImg} />
                   </Link>
                     <div className={styles.mainArticleContent}>
