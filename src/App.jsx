@@ -14,6 +14,7 @@ import BusinessPage from './Components/Pages/BusinessPage'
 import TechnologyPage from './Components/Pages/TechnologyPage'
 import SportsPage from './Components/Pages/SportsPage'
 import EntertainmentPage from './Components/Pages/EntertainmentPage'
+import HealthPage from './Components/Pages/HealthPage'
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
         <Route path="/technology" element={<TechnologyPage/>}/>
         <Route path="/sports" element={<SportsPage/>}/>
         <Route path="/entertainment" element={<EntertainmentPage/>}/>
+        <Route path="/health" element={<HealthPage/>}/>
         <Route path="*" element={<NotFound/>}/>
 
         {/* ADMIN ROUTES */}

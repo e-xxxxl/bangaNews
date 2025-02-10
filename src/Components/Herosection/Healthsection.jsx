@@ -37,7 +37,9 @@ const HealthSection = () => {
             <div className={`d-flex ${styles.flexContainer}`}>
                 {/* Main Article Block */}
                 <div className={styles.mainArticle}>
-                    <img src={mainImage} alt="Health Insights" className={styles.mainArticleImg} />
+                  <Link>
+                  <img src={mainImage} alt="Health Insights" className={styles.mainArticleImg} />
+                  </Link>
                     <div className={styles.mainArticleContent}>
                         <h3 className={styles.mainArticleTitle}>
                             The Path to Wellness: Embracing a Balanced Life
