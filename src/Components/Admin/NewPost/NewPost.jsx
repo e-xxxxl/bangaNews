@@ -22,7 +22,7 @@ const NewPost = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/posts', formData, {
+      const response = await axios.post('http://localhost:3003/news/post', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
@@ -47,7 +47,7 @@ const NewPost = () => {
 
       <Form onSubmit={handleSubmit} className="form-animate">
         <Form.Group className="mb-3" controlId="postTitle">
-          <Form.Label>Title</Form.Label>
+          <Form.Label>Titlee</Form.Label>
           <Form.Control
             type="text"
             placeholder="Enter post title"
