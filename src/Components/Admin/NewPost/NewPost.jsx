@@ -40,7 +40,7 @@ const NewPost = () => {
 
   return (
     <Container className="mt-4 new-post-container">
-      <h2 className="title">Create a New Post</h2>
+      <h2 className="title">Create a New Post?</h2>
       <div className="underline"></div>
 
       {message && <Alert variant={message.type}>{message.text}</Alert>}
