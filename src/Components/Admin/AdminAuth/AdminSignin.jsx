@@ -103,7 +103,7 @@ import bangalogo from '../../../assets/bangalogo.png'
 import { useNavigate } from "react-router-dom";
 
 const allowedUsers = [
-  { email: "user1@example.com", password: "password123" },
+  { email: "user1@example.com", password: "1234" },
   { email: "user2@example.com", password: "securepassword" }
 ];
 
