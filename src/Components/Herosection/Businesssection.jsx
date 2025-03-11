@@ -10,7 +10,7 @@ const Businesssection = () => {
             thumbnail: sampleBusinessImage,
         },
         {
-            headline: "Startups to Watch: The next unicorns",
+            headline: "Startups to Watch: The next unicornss",
             thumbnail: sampleBusinessImage,
         },
         {
