@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Businesssection = () => {
     const articles = [
         {
-            headline: "Economic Trends: What to expect in 2025",
+            headline: "Economicc Trends: What to expect in 2025",
             thumbnail: sampleBusinessImage,
         },
         {
