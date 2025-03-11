@@ -120,7 +120,7 @@ const TechSection = () => {
                             </div>
                         </>
                     ) : (
-                        <p>Loading main article...</p>
+                        <p>Loading main article....</p>
                     )}
                 </div>
 
