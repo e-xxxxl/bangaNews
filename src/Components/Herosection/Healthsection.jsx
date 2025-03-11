@@ -43,7 +43,7 @@ const HealthSection = () => {
                   </Link>
                     <div className={styles.mainArticleContent}>
                         <h3 className={styles.mainArticleTitle}>
-                            The Path to Wellness: Embracing a Balanced Life
+                            The Path to Wellness: Embracing a Balanced Lifee
                         </h3>
                         <p className={styles.mainArticleDescription}>
                             Learn how to achieve a healthier lifestyle by focusing on nutrition, mental health, and physical activities.
