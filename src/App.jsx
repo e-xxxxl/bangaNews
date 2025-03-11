@@ -15,6 +15,7 @@ import TechnologyPage from './Components/Pages/TechnologyPage'
 import SportsPage from './Components/Pages/SportsPage'
 import EntertainmentPage from './Components/Pages/EntertainmentPage'
 import HealthPage from './Components/Pages/HealthPage'
+import TechArticle from './Components/Articles/TechArticle'
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
         <Route path="/politics" element={<PoliticsPage/>}/>
         <Route path="/business" element={<BusinessPage/>}/>
         <Route path="/technology" element={<TechnologyPage/>}/>
+        <Route path="/article/:id" element={<TechArticle/>} /> {/* Parameterized Route */}
         <Route path="/sports" element={<SportsPage/>}/>
         <Route path="/entertainment" element={<EntertainmentPage/>}/>
         <Route path="/health" element={<HealthPage/>}/>

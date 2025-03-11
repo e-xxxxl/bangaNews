@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Form, Button, Container, Card, Image } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Form, Button, Container, Card, Image, Alert } from 'react-bootstrap';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,6 +11,17 @@ const NewPost = () => {
   const [category, setCategory] = useState('Tech');
   const [image, setImage] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
+  const [postType, setPostType] = useState('headline'); // New state for post type
+  const [alertMessage, setAlertMessage] = useState(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -32,6 +43,7 @@ const NewPost = () => {
     formData.append('title', title);
     formData.append('content', content);
     formData.append('category', category);
+    formData.append('postType', postType); // Include post type in request
     if (image) {
       formData.append('image', image);
     }
@@ -45,11 +57,11 @@ const NewPost = () => {
         setTitle('');
         setContent('');
         setCategory('Tech');
+        setPostType('headline'); // Reset post type
         setImage(null);
         setImagePreview(null);
 
-        // Show toast notification ONLY on small screens
-        if (window.innerWidth < 768) {
+        if (isSmallScreen) {
           toast.success('🎉 Post successfully created!', {
             position: 'bottom-center',
             autoClose: 3000,
@@ -58,12 +70,14 @@ const NewPost = () => {
             pauseOnHover: false,
             draggable: true,
           });
+        } else {
+          setAlertMessage({ type: 'success', text: '🎉 Post successfully created!' });
         }
       }
     } catch (error) {
       console.error('Error creating post:', error.response || error);
 
-      if (window.innerWidth < 768) {
+      if (isSmallScreen) {
         toast.error('❌ Failed to create post. Try again.', {
           position: 'bottom-center',
           autoClose: 3000,
@@ -72,6 +86,8 @@ const NewPost = () => {
           pauseOnHover: false,
           draggable: true,
         });
+      } else {
+        setAlertMessage({ type: 'danger', text: '❌ Failed to create post. Try again.' });
       }
     }
   };
@@ -81,7 +97,37 @@ const NewPost = () => {
       <h2 className="title">Create a New Post</h2>
       <div className="underline"></div>
 
+      {!isSmallScreen && alertMessage && (
+        <Alert variant={alertMessage.type} onClose={() => setAlertMessage(null)} dismissible>
+          {alertMessage.text}
+        </Alert>
+      )}
+
       <Form onSubmit={handleSubmit} className="form-animate">
+        <Form.Group className="mb-3">
+          <Form.Label>Post Type</Form.Label>
+          <div>
+            <Form.Check
+              type="radio"
+              label="Headline"
+              name="postType"
+              value="headline"
+              checked={postType === 'headline'}
+              onChange={(e) => setPostType(e.target.value)}
+              inline
+            />
+            <Form.Check
+              type="radio"
+              label="Article"
+              name="postType"
+              value="article"
+              checked={postType === 'article'}
+              onChange={(e) => setPostType(e.target.value)}
+              inline
+            />
+          </div>
+        </Form.Group>
+
         <Form.Group className="mb-3" controlId="postTitle">
           <Form.Label>Title</Form.Label>
           <Form.Control
@@ -134,7 +180,6 @@ const NewPost = () => {
         </Button>
       </Form>
 
-      {/* Toast Notification Container */}
       <ToastContainer />
     </Container>
   );
